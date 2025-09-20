@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nombre": "Yerba Mate Rosamonte",
+    "precio": 2500,
+    "descripcion": "Un clásico con palo de Misiones. Sabor intenso y duradero, ideal para mates largos con amigos. No te va a defraudar.",
+    "imagenUrl": "https://reventandoprecios.com/cdn/shop/files/9_ff0c49c1-8d37-4912-bdd4-3ce0647fc528.png?v=1718243555&width=1946"
+  },
+  {
+    "id": 2,
+    "nombre": "Yerba Mate Playadito",
+    "precio": 2350,
+    "descripcion": "Suave y amigable, la compañera ideal para arrancar el día tranquilo. Es la yerba que no te falla si sos nuevo en el mate.",
+    "imagenUrl": "https://carrefourar.vtexassets.com/arquivos/ids/541064/7793704000911_02.jpg?v=638563927533100000"
+  },
+  {
+    "id": 3,
+    "nombre": "Yerba Mate Canarias",
+    "precio": 3100,
+    "descripcion": "La preferida de los uruguayos, pero la amamos igual. Sin palo, de molienda fina y un sabor potente que te despierta sí o sí.",
+    "imagenUrl": "https://jumboargentina.vtexassets.com/arquivos/ids/477652/Yerba-Mate-Canarias-500-Gr-1-13389.jpg?v=636710250261900000"
+  }
+]

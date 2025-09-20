@@ -1,0 +1,57 @@
+.cargando {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 4rem;
+}
+
+.detalle-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.detalle-imagen img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.detalle-info h1 {
+  font-size: 2.8rem;
+  color: var(--color-primario);
+  margin-top: 0;
+}
+
+.detalle-info .descripcion {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.detalle-info .precio {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-acento);
+  margin: 2rem 0;
+}
+
+.btn-comprar {
+  background-color: var(--color-acento);
+  color: #000000;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: #d35400; 
+}
+
+.no-encontrado {
+  text-align: center;
+  padding: 4rem;
+}

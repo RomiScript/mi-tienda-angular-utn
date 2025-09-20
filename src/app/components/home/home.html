@@ -1,0 +1,18 @@
+<section class="home-header">
+  <h1>Los mejores mates, para los mejores momentos</h1>
+  <p>Encontrá la yerba que va con vos.</p>
+</section>
+
+<div class="listado-productos">
+  @for (producto of productos(); track producto.id) {
+    <article class="tarjeta-producto" [routerLink]="['/producto', producto.id]">
+      <img [src]="producto.imagenUrl" [alt]="'Imagen de ' + producto.nombre">
+      <div class="tarjeta-info">
+        <h3>{{ producto.nombre }}</h3>
+        <p class="precio">${{ producto.precio.toLocaleString('es-AR') }}</p>
+      </div>
+    </article>
+  } @empty {
+    <p>Upa, parece que nos quedamos sin yerba. ¡Volvé en un rato!</p>
+  }
+</div>

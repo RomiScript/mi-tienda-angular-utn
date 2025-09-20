@@ -1,0 +1,29 @@
+<header class="header">
+  <nav class="nav-principal">
+    <a routerLink="/">🧉 Tienda de Mates</a>
+    <ul>
+      <li>
+        <a routerLink="/" 
+           routerLinkActive="active-link" 
+           [routerLinkActiveOptions]="{exact: true}">
+           Inicio
+        </a>
+      </li>
+      <li>
+        <a routerLink="/contacto" routerLinkActive="active-link">
+          Contacto
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <router-outlet></router-outlet>
+  
+  
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 Tienda de Mates. Hecho con ganas, casi sin tiempo y unos buenos mates por RomiScript.</p>
+</footer>

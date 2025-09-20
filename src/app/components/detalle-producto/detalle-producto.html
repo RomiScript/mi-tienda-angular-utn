@@ -1,0 +1,27 @@
+
+
+
+
+@if (cargando()) {
+  <p class="cargando">Buscando la yerba...</p>
+} @else {
+  @if (producto()) {
+    <div class="detalle-container">
+      <div class="detalle-imagen">
+        <img [src]="producto()?.imagenUrl" [alt]="'Imagen de ' + producto()?.nombre">
+      </div>
+      <div class="detalle-info">
+        <h1>{{ producto()?.nombre }}</h1>
+        <p class="descripcion">{{ producto()?.descripcion }}</p>
+        <p class="precio">{{ producto()?.precio | currency:'ARS':'$' }}</p>
+        <button class="btn-comprar">Agregar al Carrito</button>
+      </div>
+    </div>
+  } @else {
+    <div class="no-encontrado">
+      <h2>¡Epa! No encontramos esa yerba.</h2>
+      <p>Quizás te equivocaste de número. ¡Probá con otra!</p>
+      <a routerLink="/" class="btn-volver">Volver al Inicio</a>
+    </div>
+  }
+}
