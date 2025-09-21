@@ -7,7 +7,7 @@ import { CurrencyPipe } from '@angular/common';
 @Component({
   selector: 'app-detalle-producto',
   standalone: true,
-  imports: [RouterLink, CurrencyPipe], // CurrencyPipe para formatear el precio
+  imports: [RouterLink, CurrencyPipe], 
   templateUrl: './detalle-producto.html',
   styleUrls: ['./detalle-producto.css']
 })
@@ -21,7 +21,7 @@ export class DetalleProducto implements OnInit {
   private productoService = inject(ProductoService);
 
   ngOnInit(): void {
-    // Saco el 'id' que viene en la URL (ej: /producto/2)
+    // Saco el id que viene en la URL (ej: /producto/2)
     const idProducto = this.route.snapshot.paramMap.get('id');
     
     if (idProducto) {
