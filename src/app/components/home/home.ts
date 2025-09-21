@@ -6,13 +6,13 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink], // Necesito RouterLink para navegar al detalle
+  imports: [RouterLink], //RouterLink para navegar al detalle
   templateUrl: './home.html',
   styleUrls: ['./home.css']
 })
 export class HomeComponent implements OnInit {
 
-  // Uso una signal para guardar los productos. Es la forma más nueva y reactiva.
+  // Uso una signal para guardar los productos.
   public productos = signal<Producto[]>([]);
   private productoService = inject(ProductoService);
 
