@@ -49,7 +49,7 @@
 }
 
 .btn-enviar:hover {
-  background-color: #2ecc71; /* Un verde más brillante */
+  background-color: #2ecc71;
 }
 
 .btn-enviar:disabled {
@@ -58,7 +58,7 @@
 }
 
 .error-msg {
-  color: #e74c3c; /* Un rojo para los errores */
+  color: #e74c3c; 
   font-size: 0.8rem;
   display: block;
   margin-top: 0.3rem;
